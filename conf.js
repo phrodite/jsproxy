@@ -28,6 +28,7 @@ jsproxy_config({
         // 每个账号每天 10 万次免费请求，但有频率限制
         //'0.overthesea.workers.dev': 1,
         //'0.indomitable.workers.dev': 1,
+        //'0.truthcanbe.workers.dev': 1,
 
       }
     }
