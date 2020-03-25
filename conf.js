@@ -32,6 +32,7 @@ jsproxy_config({
         //'b.hehe.workers.dev': 1,
         //'b.lulu.workers.dev': 1,
         //'0.overthesea.workers.dev': 1,
+        //'0.indomitable.workers.dev': 1,
 
       }
     }
