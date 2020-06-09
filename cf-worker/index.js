@@ -3,7 +3,7 @@
 /**
  * static files (404.html, sw.js, conf.js)
  */
-const ASSET_URL = 'https://leekelly0.github.io/jsproxy'
+const ASSET_URL = 'https://phrodite.github.io/jsproxy'
 
 const JS_VER = 10
 const MAX_RETRY = 1
@@ -110,7 +110,7 @@ function httpHandler(req, pathname) {
   reqHdrNew.set('x-jsproxy', '1')
 
   // 此处逻辑和 http-dec-req-hdr.lua 大致相同
-  // https://github.com/leekelly0/jsproxy/blob/master/lua/http-dec-req-hdr.lua
+  // https://github.com/phrodite/jsproxy/blob/master/lua/http-dec-req-hdr.lua
   const refer = reqHdrNew.get('referer')
   const query = refer.substr(refer.indexOf('?') + 1)
   if (!query) {
