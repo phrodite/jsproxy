@@ -5,9 +5,9 @@
 JSPROXY_VER=0.1.0
 OPENRESTY_VER=1.15.8.1
 
-SRC_URL=https://raw.githubusercontent.com/EtherDream/jsproxy/$JSPROXY_VER
-BIN_URL=https://raw.githubusercontent.com/EtherDream/jsproxy-bin/master
-ZIP_URL=https://codeload.github.com/EtherDream/jsproxy/tar.gz
+SRC_URL=https://raw.githubusercontent.com/phrodite/jsproxy/$JSPROXY_VER
+BIN_URL=https://raw.githubusercontent.com/phrodite/jsproxy-bin/master
+ZIP_URL=https://codeload.github.com/phrodite/jsproxy/tar.gz
 
 SUPPORTED_OS="Linux-x86_64"
 OS="$(uname)-$(uname -m)"
@@ -243,7 +243,7 @@ main() {
   local line=$(iptables -t nat -nL --line-numbers | grep "tcp dpt:80 redir ports 8080")
   iptables -t nat -D PREROUTING ${line%% *}
 
-  log "安装完成。后续维护参考 https://github.com/EtherDream/jsproxy"
+  log "安装完成。后续维护参考 https://github.com/phrodite/jsproxy"
 }
 
 
