@@ -26,6 +26,8 @@ jsproxy_config({
 
         // 免费版（低权重，分摊一些成本）
         // 每个账号每天 10 万次免费请求，但有频率限制
+        //'0.overthesea.workers.dev': 1,
+        //'0.justbehappy.workers.dev': 1,
       }
     }
   },
@@ -45,8 +47,6 @@ jsproxy_config({
    * 静态资源 CDN 地址
    * 用于加速 `assets` 目录中的资源访问
    */
-  // assets_cdn: 'https://cdn.jsdelivr.net/gh/zjcqoo/aphroditeAglaea.github.io@master/assets/',
-
   // 本地测试时打开，否则访问的是线上的
   assets_cdn: 'assets/',
 
