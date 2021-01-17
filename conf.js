@@ -6,7 +6,7 @@ jsproxy_config({
 
   // 通过 CDN 加速常用网站的静态资源（实验中）
   static_boost: {
-    enable: false,
+    enable: true,
     ver: 62
   },
 
@@ -21,7 +21,7 @@ jsproxy_config({
     // 该节点用于加载大体积的静态资源
     'cfworker': {
       label: '',
-      hidden: true,
+      hidden: False,
       lines: {
 
         // 免费版（低权重，分摊一些成本）
@@ -66,7 +66,7 @@ jsproxy_config({
    */
   url_handler: {
     'https://www.baidu.com/img/baidu_resultlogo@2.png': {
-      replace: 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png'
+      replace: 'https://www.baidu.com/img/baidu_resultlogo@2.png'
     },
   }
 })
